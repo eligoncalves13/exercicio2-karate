@@ -4,17 +4,17 @@ function setup() {
         baseUrl: "https://petstore.swagger.io/v2"
     }
     
-    if(ambiente == "dev"){
+    if(ambiente === "dev"){
         karate.configure('logPrettyRequest', true); 
         karate.configure('logPrettyResponse', true); 
     }
 
     karate.configure("headers", {
         operador: "Élida",
-        framework: "karate"
+        framework: "Karate"
     });
 
-    karate.configure('connectTimeout', 40000);
+    //karate.configure('connectTimeout', 40000);
     karate.configure('readTimeout', 40000); 
 
     return config;
