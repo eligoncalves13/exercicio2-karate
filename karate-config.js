@@ -1,5 +1,6 @@
 function setup() {
     var ambiente = karate.env;
+    
     var config = {
         baseUrl: "https://petstore.swagger.io/v2"
     }
